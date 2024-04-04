@@ -1,0 +1,54 @@
+body {
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  color: blue;
+}
+
+/* cãn gi?a v?i display: block */
+.demo {
+  /* cãn gi?a */
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.box {
+  margin: 0 auto;
+  max-width: 700px;
+  background-color: aquamarine;
+}
+
+/* cãn gi?a v?i display: flex */
+/* .demo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* cãn gi?a v?i position: absolute => th? con và position: relative => th? cha */
+/*
+.box {
+  position: relative;
+}
+
+.demo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+} */
+
+/*  khi d? li?u quá l?n vi?c reload l?i web v?i s? lý?ng data l?n và kèm theo h?nh ?nh s? gây t?n bãng thông và làm gi?m t?c ð? truy xu?t
+=> thêm thu?c tính loading="lazy" vào th? img
+ */

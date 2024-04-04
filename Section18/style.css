@@ -1,0 +1,28 @@
+/* System Fonts with system-ui */
+body {
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+p {
+  color: rgb(255, 0, 0);
+  color: rgba(255, 0, 0, 0.2);
+  color: rgb(255 0 0);
+  color: rgb(255 0 0 / 0.5);
+}
+
+.parent {
+  width: 20rem;
+  height: 20rem;
+  color: green;
+  /* background-color: currentColor; */
+  margin: 30px;
+  outline: 10px solid pink;
+  outline-offset: 10px;
+}
+
+.child {
+  width: 10rem;
+  height: 10rem;
+  background-color: currentColor;
+}

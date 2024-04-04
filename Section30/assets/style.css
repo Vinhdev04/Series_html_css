@@ -1,0 +1,50 @@
+body {
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 30px;
+  color: blue;
+  text-align: center;
+}
+
+h1::selection {
+  color: red;
+}
+
+/* ::first-line =>  ch?n d?ng ð?u tiên áp d?ng cho display  inline-block và block */
+.text1::first-line {
+  color: red;
+}
+
+/* ::first-letter => ch?n ch? cái ð?u tiên */
+.text2::first-letter {
+  font-size: 30px;
+  color: blue;
+}
+
+/* ::before =>  thêm ph?n t? vào phía trý?c ,display: inline*/
+.text3::before {
+  content: "Thêm vào phía trý?c";
+  color: brown;
+}
+
+/* ::after => thêm ph?n t? vào phía sau,display: inline */
+.text7::after {
+  content: "Thêm vào phía sau";
+  color: aquamarine;
+}
+
+/* ::marker =>  ch?n các  ði?m ðánh d?u c?a th? li*/
+li::marker {
+  color: blue;
+}
+
+/* ::section => ch?n vùng  ðang ðý?c bôi ðen */
+.text6::selection {
+  color: yellow;
+}

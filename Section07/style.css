@@ -1,0 +1,37 @@
+/* Chọn tất cả thẻ a có thuộc tính href */
+a[href] {
+  color: red;
+  font-size: 20px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Chọn tất cả thẻ a có thuộc tính chính xác là  tính _blank */
+a[target="_blank"] {
+  color: green;
+}
+
+/* Chọpn tất cả thẻ a có chứa.. .  riêng biệt */
+a[title~="on"] {
+  color: peru;
+}
+
+/* Chọn tất cả có chứa  ở bất  kì vị trí nào */
+a[title*="Flow"] {
+  color: blue;
+}
+
+/* Chọn tất cả có bắt đầu là..  Nó  phải là từ đơn hoặc nếu là từ phức thì  sau phải được bằng gạch ngang  */
+a[title|="the hero"] {
+  color: chartreuse;
+}
+
+/* Chọn tất cả có bắt đầu là ... và ko quan tâm phía sau nó */
+a[title^="no"] {
+  color: blueviolet;
+}
+
+/* Chọn tất cả có kết thúc là .... */
+a[title$="tôi"] {
+  color: brown;
+}

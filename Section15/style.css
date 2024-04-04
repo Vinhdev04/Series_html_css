@@ -1,0 +1,38 @@
+/* Margin collapse ch? x?y ra khi ta
+ c? t?nh xét thu?c tính margin top ,bottom cùng cho c? 2 ð?i tý?ng vs ð?i tý?ng c?n l?i 
+ Và ch? x?y ra cho chi?u d?c chi?u ngang ko có margin collapse */
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+.box {
+  width: 200px;
+  height: 200px;
+  border: 10px solid red;
+}
+
+.box1 {
+  margin-bottom: 50px;
+}
+
+.box2 {
+  margin-top: 70px;
+}
+
+/* .item {
+  color: red;
+  background-color: yellow;
+}
+
+.item1 {
+  margin-right: 10px;
+}
+.item2 {
+  margin-left: 20px;
+} */
+
+/* Cách ch?ng margin collapse:
++   Cách 1: ch? xét cho 1 ph?n t? thay v? 2 ph?n t?
++   Cách 2: dùng display: flex vào th? cha
+*/

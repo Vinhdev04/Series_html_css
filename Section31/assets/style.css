@@ -1,0 +1,40 @@
+p {
+  text-align: center;
+  color: blue;
+  font-size: 40px;
+}
+
+p::selection {
+  color: red;
+}
+
+.box {
+  /* t?o bi?n ð?m */
+  counter-reset: section;
+  padding-left: 30px;
+  background-color: green;
+}
+
+h2 {
+  /* tãng bi?n ð?m lên 1 */
+  counter-increment: section;
+  /* t?o bi?n ð?m và reset h3 v? 0 */
+  counter-reset: sub-section;
+}
+
+h2::before {
+  /* Thêm trý?c th? h2 */
+  content: "Ph?n " counter(section) ": ";
+  color: red;
+}
+
+h3 {
+  /* tãng lên 1 ðõn v? */
+  counter-increment: sub-section;
+}
+
+h3::before {
+  content: counter(section) "." counter(sub-section) " ";
+  color: violet;
+  padding-left: 20px;
+}

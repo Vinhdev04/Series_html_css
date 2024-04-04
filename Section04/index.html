@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS co ban</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- CSS-Internal -->
+    <style>
+      p {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 title="phân biệt css inline,internal,external">Sử dụng CSS in Html</h1>
+    <!-- Inline -> css nội tuyến
+        <tag style=""/>
+    -->
+
+    <ul>
+      <h2>CSS-Inline:</h2>
+      <li>
+        <p style="color: red">This is the first</p>
+      </li>
+      <li>
+        <p style="color: purple">This is the second</p>
+      </li>
+      <li>
+        <p style="color: gold">This is the thirst</p>
+      </li>
+      <li>
+        <p style="color: gray">This is the four</p>
+      </li>
+      <li>
+        <p style="color: olivedrab">This is the five</p>
+      </li>
+      <ol>
+        <h2 style="color: red">Nhược điểm của CSS-Inline:</h2>
+        <li style="color: blue">
+          Khó thay đổi, mỗi lần thay đổi phải thay đổi một cách riêng lẻ
+        </li>
+        <li style="color: blue">Không tái sử dụng được</li>
+        <li style="color: blue">Khó quản lý</li>
+        <li style="color: blue">Khó tách biệt cấu trúc</li>
+      </ol>
+    </ul>
+
+    <!-- Internal -> css nội bộ 
+        <style> css </style>
+    -->
+    <ul>
+      <h2>CSS-Internal:</h2>
+      <li>
+        <p>This is the first</p>
+      </li>
+      <li>
+        <p>This is the second</p>
+      </li>
+      <li>
+        <p>This is the thirst</p>
+      </li>
+      <li>
+        <p>This is the four</p>
+      </li>
+      <li>
+        <p>This is the five</p>
+      </li>
+      <ol>
+        <h2 style="color: red">Nhược điểm của CSS-Internal:</h2>
+        <li style="color: blue">Khó thay đổi,và quản lí đối vơi dự án lớn</li>
+        <li style="color: blue">Gây ra sự cồng kềnh với đoạn mã html</li>
+      </ol>
+    </ul>
+
+    <!-- External -> css bên ngoài
+        <link href="style.css"/>
+    -->
+    <ol>
+      <h2 style="color: red">ĐỘ ƯU TIÊN:</h2>
+      <li style="color: blue">Inline > Internal >External</li>
+      <li style="color: blue">Xét Internal và External</li>
+      <li style="color: blue">Phần tử viết sau sẽ ghi đè lên phần tử trước</li>
+    </ol>
+  </body>
+</html>

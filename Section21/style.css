@@ -1,0 +1,44 @@
+body {
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.box {
+  width: 600px;
+  height: 400px;
+  background-image: url(./img/picture2.jpg);
+  border: 4px dotted red;
+
+  /* background-size: contain
+    => gi? nguyên t? l? ,
+    => ?nh v?a khung h?nh, ko b? m?t ?nh,
+    ph?n kích thý?c th?a s? b? l?p l?i ?nh */
+  background-size: contain;
+  /* background-size: cover
+    => ?nh v?a kh?p khung h?nh, ko b? méo
+    => có th? m?t ph?n ?nh, ?nh ko b? l?p l?i  */
+  background-size: cover;
+  /* background-size: 100% 100%;
+  background-size: 600px 400px; */
+
+  /* background-repeat: repeat => l?p ?nh */
+  background-repeat: repeat;
+  /* background-repeat: no-repeat  => ko l?p ?nh */
+  background-repeat: no-repeat;
+  /* background-repeat: repeat-x => l?p theo chi?u ngang*/
+  background-repeat: repeat-x;
+  /* background-repeat: repeat-x => l?p theo chi?u doc*/
+  background-repeat: repeat-y;
+
+  /* background-position: */
+  background-position: top right;
+  background-position: top left;
+  background-position: bottom right;
+  background-position: bottom left;
+  background-position: top;
+  background-position: bottom;
+  background-position: left;
+  background-position: right;
+  background-position: center;
+  background-position: 0% 0%;
+}

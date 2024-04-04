@@ -1,0 +1,121 @@
+/* System Fonts with system-ui */
+body {
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+h1 {
+  text-align: center;
+  color: blue;
+  text-decoration: underline;
+}
+
+.paragraph {
+  color: red;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 5rem;
+  letter-spacing: 0.2rem;
+}
+
+/* text-decoration */
+
+strong {
+  /* bo gach chân */
+  text-decoration: none;
+
+  /* thêm gach trên ðau phan tu */
+  text-decoration: overline;
+
+  /* thêm gach duoi phan tu */
+  text-decoration: underline;
+
+  /* phoi kieu*/
+  text-decoration: dashed underline;
+
+  /* gach ngang*/
+  text-decoration: line-through;
+}
+
+/* text-indent => th?t l?  */
+p {
+  /* th?t l? trái 10px */
+  text-indent: -10px;
+
+  /* th?t l? ph?i 30px */
+  text-indent: 30px;
+}
+
+/* text-transform */
+p {
+  /* vi?t hoa ch? cái ð?u */
+  text-transform: capitalize;
+
+  /* vi?t in hoa t?t c? vãn b?n */
+  text-transform: uppercase;
+
+  /* vi?t thý?ng t?t c? vãn b?n */
+  text-transform: lowercase;
+}
+
+.title-demo {
+  /* t? ð?ng r?t xu?ng hàng */
+  word-break: break-all;
+  background-color: yellow;
+}
+
+/* White-space */
+.paragraph-demo {
+  /* Không xu?ng d?ng */
+  white-space: nowrap;
+
+  /* Gi? nguyên ð?nh d?ng code nhý th? pre */
+  white-space: pre;
+
+  /* Kho?ng tr?ng dý th?a ? các d?ng s? b? lo?i b? c?n l?i d? nguyên (preformatted)*/
+  /* white-space: pre-line; */
+  /* b?o toàn t?t c? ð?nh d?ng ðý?c vi?t, n?u ko ð? v? trí cho t? m?i t? ð?ng r?t xu?ng hàng ti?p theo */
+  white-space: pre-wrap;
+}
+
+/* Text-shadow */
+.text {
+  text-align: center;
+  text-shadow: 5px 20px 3px rgba(255, 0, 0, 0.753);
+}
+
+/* Overflow */
+.title-title_example {
+  width: 300px;
+  height: 200px;
+  text-align: center;
+  background-color: yellow;
+  /* ?n n?i dung n?u quá kích thý?c */
+  overflow: hidden;
+
+  /* n?i dung  ng?n ko có scrollbar và n?i dung dài th? có scrollbar */
+  /* overflow:auto; */
+
+  /* t?o scrollbar */
+  overflow: scroll;
+}
+
+h3 {
+  width: 200px;
+  background-color: pink;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+h4 {
+  width: 200px;
+  background-color: red;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /*  làm d?u ... trên d?ng th? 2*/
+  /* -webkit-line-clamp: 2; */
+  /*  làm d?u ... trên d?ng th? 3*/
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+}

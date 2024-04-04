@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Pseudo class :link  -> tác dụng lên selector khi chưa di chuột qua*/
+a:link {
+  color: red;
+}
+
+/* Pseudo class :visited -> tác dụng lên selector khi đã click vào */
+a:visited {
+  color: green;
+}
+
+/* Pseudo class :hover -> khi di chuột  qua selector  */
+a:hover {
+  color: hotpink;
+  font-size: 20px;
+}
+
+/* Pseudo class :active  -> khi đã giữ click chuột  vào */
+a:active {
+  color: blue;
+}
+
+#button-class {
+  width: 100px;
+  height: 40px;
+  background-color: aqua;
+  color: orange;
+  border: 1px solid #333;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  font-weight: bold;
+  padding: 2px;
+}
+
+/* Pseudo class :hover */
+#button-class:hover {
+  color: blue;
+  background-color: antiquewhite;
+  width: 60px;
+  height: 40px;
+}
+
+/* Pseudo class :empty  -> */
+.text-example {
+  background-color: yellow;
+}
+
+/* Pseudo class :empty -> tác động lên selector ko có nội dung */
+.text-demo:empty {
+  background-color: blue;
+  width: 70px;
+  height: 70px;
+}
+
+/* Pseudo class :target -> link tới */
+h2:target {
+  color: blue;
+}

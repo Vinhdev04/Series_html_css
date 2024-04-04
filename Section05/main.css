@@ -1,0 +1,17 @@
+body {
+  background-image: url("./img/img3.avif");
+}
+
+img {
+  /* hỗ trợ animation */
+  transition: 1.5s;
+}
+input:checked ~ img {
+  /* Ẩn khỏi giao diện */
+  /* display: none; */
+
+  /* Ẩn nhưng vẫn tương tác được */
+  /* visibility: hidden; */
+
+  opacity: 0;
+}

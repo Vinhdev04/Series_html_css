@@ -1,0 +1,44 @@
+body {
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: blue;
+  text-align: center;
+}
+
+.demo {
+  max-width: 300px;
+  /* m?c ð?nh , có th? l?y ðý?c link h?nh  ?nh*/
+  pointer-events: none;
+
+  /* không th? click vào l?y link h?nh  ?nh*/
+  pointer-events: none;
+}
+
+.btn-home {
+  display: inline-block;
+  margin: 50px;
+  padding: 10px 25px;
+  background-color: aquamarine;
+  color: white;
+  font-size: 25px;
+  border-radius: 70px;
+  text-decoration: none;
+  
+  /*không th? click vào týõng tác ðý?c ð?i v?i th? a*/
+  pointer-events: none;
+  -webkit-border-radius: 70px;
+  -moz-border-radius: 70px;
+  -ms-border-radius: 70px;
+  -o-border-radius: 70px;
+}
+
+.btn-home:hover {
+  color: black;
+  background-color: blue;
+}

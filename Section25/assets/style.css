@@ -1,0 +1,56 @@
+body {
+  box-sizing: border-box;
+  background: url(./img/background3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+h1:hover {
+  transform: scale(1.2);
+  color: red;
+  background-color: violet;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+.box {
+  height: 50px;
+  width: 50px;
+  margin: 0 auto;
+  background-color: rgb(173, 13, 13, 0.3);
+  margin-top: 50px;
+  /* backdrop-filter: => b? l?c phông n?n
+    backdrop-filter: none;
+
+    /* URL to SVG filter */
+  /* backdrop-filter: url(commonfilters.svg#filter); */
+
+  /* <filter-function> values */
+  backdrop-filter: blur(2px); /* ð? nh?e */
+  backdrop-filter: brightness(60%); /* ð? sáng t?i */
+  backdrop-filter: contrast(40%); /* týõng ph?n */
+  backdrop-filter: drop-shadow(4px 4px 10px blue); /*ð? bóng*/
+  backdrop-filter: grayscale(90%); /*tông màu xám*/
+  backdrop-filter: hue-rotate(120deg); /*thay ð?i gam màu */
+  backdrop-filter: invert(70%); /*ð?o ngý?c màu*/
+  backdrop-filter: opacity(20%); /*ð? trong su?t*/
+  backdrop-filter: sepia(90%); /*kênh màu c? ði?n*/
+  /* backdrop-filter: saturate(80%); /**/
+
+  /* Multiple filters */
+  /* backdrop-filter: url(filters.svg#filter) blur(4px) saturate(150%); */
+
+  /* Global values */
+  /* backdrop-filter: inherit;
+          backdrop-filter: initial;
+          backdrop-filter: revert;
+          backdrop-filter: revert-layer;
+          backdrop-filter: unset;
+            */
+
+  @supports (backdrop-filter: blur(1px) contrast(50%)) or
+    (-webkit-backdrop-filter: blur(1px) contrast(50%)) {
+    backdrop-filter: blur(1px) contrast(50%);
+    -webkit-backdrop-filter: blur(1px) contrast(50%);
+  }
+}

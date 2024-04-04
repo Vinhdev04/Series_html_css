@@ -1,0 +1,34 @@
+/* Lấy phần tử con đàu tiên */
+/* p:first-child {
+  color: red;
+  font-size: 30px;
+} */
+
+/* lấy phần tử con cuối cùng   */
+/* p:last-child {
+  color: blue;
+} */
+
+/* Lấy phân tử con thứ n từ trên xuống  */
+/* p:nth-child(3) {
+  color: green;
+} */
+
+/* odd : lẻ
+   even : chẵn
+   2n+1 : nhày theo step mong muốn
+ */
+
+p:nth-child(3n + 1) {
+  color: aqua;
+}
+
+/* chọn phần tử con thứ n từ dưới lên */
+p:nth-last-child(2) {
+  color: red;
+}
+
+/* Chọn thẻ con duy nhất - duy nhất 1 mình  ko chứa bất kì thẻ khác */
+p:only-child {
+  color: brown;
+}

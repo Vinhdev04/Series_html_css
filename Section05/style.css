@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  background-image: url(./img/img2.avif);
+  background-repeat: no-repeat;
+}
+
+h2 {
+  opacity: 0.2;
+  background: red;
+}
+
+h3 {
+  display: none;
+  background: yellow;
+}
+
+h4 {
+  visibility: hidden;
+  /* visibility:visible; */
+  background: orange;
+}

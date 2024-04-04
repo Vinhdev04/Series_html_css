@@ -1,0 +1,20 @@
+<!-- Html - HyperText Markup Language -->
+<h1>Hello <span class="example">World</span></h1>
+
+<!-- Css - Cascading Style Sheets -->
+<style>
+  .example {
+    color: red;
+    font-size: 52px;
+  }
+</style>
+
+<!-- Javascript -->
+<script>
+  const example = document.querySelector(".example");
+
+  example.onclick = function () {
+    this.innerText = "Bạn đã click vào đây";
+    this.style.color = "green";
+  };
+</script>

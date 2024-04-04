@@ -1,0 +1,66 @@
+body {
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.box {
+  height: 400px;
+  width: 600px;
+  background-image: url(./img/av1.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  background-attachment: scroll;
+  background-attachment: local;
+  background-attachment: fixed;
+}
+
+.test_local {
+  margin-top: 50px;
+  height: 300px;
+  width: 70%;
+  overflow: auto;
+  background-image: url(./img/av1.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: local;
+}
+
+.box1 {
+  width: 200px;
+  height: 200px;
+  background-image: url(./img/1.PNG);
+  border: 40px dotted blue;
+  padding: 50px;
+
+  /* background-clip: border-box => m?c ð?nh  */
+  background-clip: border-box;
+
+  /* background-clip: padding-box -> ð? t? padding vào */
+  background-clip: padding-box;
+
+  /* background-clip: content-box -> ð? t? content vào*/
+  background-clip: content-box;
+}
+
+.text-highlight {
+  color: transparent;
+  background-color: #00dbde;
+  background-image: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
+
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+/* ki?m tra xem tr?nh duy?t có h? tr? ko n?u có -> ti?p t?c */
+@supports (background-clip: text) or (-webkit-background-clip: text) {
+  .text-highlight {
+    color: transparent;
+    background-color: #00dbde;
+    background-image: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
+
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+}
+

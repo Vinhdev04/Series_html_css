@@ -1,0 +1,20 @@
+body{
+    background-color: rgb(144, 156, 156);
+    margin: 0;
+    padding: 0;
+}
+
+.container p {
+    line-height: 1.4;
+}
+
+.container img {
+    max-width: 600px;
+}
+
+.container {
+    width: 700px;
+    background-color: cornflowerblue;
+    margin: 0 auto;
+    text-align:  center;
+}

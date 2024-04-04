@@ -1,0 +1,58 @@
+h1 {
+  text-align: center;
+  color: green;
+  margin-bottom: 50px;
+}
+.box {
+  width: 200px;
+  height: 200px;
+  /* width: 300px;
+  height: 500px; */
+  margin: 0 auto;
+  background: url(./img/avatar.jpg) center/cover;
+  /* clip-path: circle() -> dùng ðõn v? týõng ð?i ho?c tuy?t ð?i
+    + radius = % * max(width,height) ho?c radius = px * max(width,height).....
+    + ví d? height: 500px, width: 300px => radius = 40% * max(300,500)
+    => radius = 50% * 500 = 250px
+   */
+  /* clip-path: circle(250px); */
+  clip-path: circle(50%);
+  clip-path: circle(50% at 50% 50%);
+  /* d?ch tâm ð?ng tr?n theo x,y */
+  /* clip-path: circle(40% at 30% 70%); */
+}
+
+.box1 {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  background: url(./img/avatar.jpg) center/cover;
+
+  /* clip-path: inset() -> c?t theo h?nh ch? nh?t,dùng ðõn v? týõng ð?i ho?c tuy?t ð?i
+  => xét týõng t? padding,margin */
+  clip-path: inset(50px);
+  clip-path: inset(50px 30px);
+  clip-path: inset(50px 30px 40px);
+  clip-path: inset(50px 30px 40px 50px);
+
+  /* bo góc => thêm sau keyword "round" */
+  clip-path: inset(20px round 10px);
+  clip-path: inset(20px round 10px 30px);
+  clip-path: inset(20px round 10px 20px 30px);
+  clip-path: inset(20px round 10px 30px 20px 40px);
+}
+
+.box2 {
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  background: url(./img/avatar.jpg) center/cover;
+
+  /*c?t h?nh  ?nh theo ða giác=>clip-path: polygon(xyxyxyxy.....)*/
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 80%, 0 100%);
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}

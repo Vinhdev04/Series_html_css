@@ -1,0 +1,66 @@
+/* .parent {
+  width: 80vw;
+  height: 80vh;
+  background-color: pink;
+}
+
+.child {
+  width: 40vw;
+  height: 40vh;
+  background-color: green;
+} */
+
+/* TH1: Th? cha  không xét thu?c tính font-size => l?y c?a th? html  */
+.child {
+  width: 10em;
+  height: 10em;
+  background-color: pink;
+}
+
+/* TH2: th? cha có font-size tuy?t ð?i */
+.parent {
+  font-size: 20px;
+}
+
+.child {
+  width: 10em;
+  height: 10em;
+  background-color: pink;
+}
+
+/* TH3: Th? cha và th? con ð?u có font-size => ýu tiên font-size hi?n t?i c?a nó */
+/* .parent {
+  font-size: 20px;
+}
+
+.child {
+  font-size: 10px;
+  width: 10em;
+  height: 10em;
+  background-color: pink;
+} */
+
+/* TH4: Th? cha có font-size týõng ð?i
+=> Th? cha s? l?y kích thý?c m?c ð?nh t? tr?nh duy?t 16px
+=> Th? con s? k? th?a t? th? cha */
+
+.parent {
+  font-size: 2em;
+}
+
+.child {
+  width: 10em;
+  height: 10em;
+  background-color: pink;
+}
+
+.parent1 {
+  font-size: 10px;
+}
+
+.child1 {
+  font-size: 2em;
+  width: 2em;
+  height: 2em;
+  background-color: green;
+}

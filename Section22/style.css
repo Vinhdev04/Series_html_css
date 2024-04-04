@@ -1,0 +1,38 @@
+body {
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.box {
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.box1 {
+  /* m?c ð?nh: to bottom */
+  background-image: linear-gradient(red, blue);
+  background-image: linear-gradient(to bottom, red, blue);
+}
+
+.box2 {
+  background-image: linear-gradient(to top, red, blue);
+}
+
+.box3 {
+  background-image: linear-gradient(to left, red, blue);
+}
+
+.box4 {
+  background-image: linear-gradient(to right, red, blue);
+}
+
+.box5 {
+  background-image: linear-gradient(to bottom right, red, blue);
+}
+
+.box6 {
+  width: 200px;
+  height: 200px;
+  background-image: linear-gradient(red 40%, blue);
+  background-image: linear-gradient(red 50%, blue 50%);
+}

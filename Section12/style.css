@@ -1,0 +1,18 @@
+/* selector:not() chọn tất cả trừ thẻ ().... */
+.theme-color:not(p) {
+    color: red;
+}
+
+
+.color-pick:not(:last-child) {
+    color: green;
+}
+
+
+.text-demo:not(:nth-child(3)) {
+    color: violet;
+}
+
+.text-demo:not(:first-of-type) {
+    color: blue;
+}

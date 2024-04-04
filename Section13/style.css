@@ -1,0 +1,90 @@
+
+/* Border - mix  */
+.box {
+    width: 70px;
+    height: 70px;
+    color:yellow;
+    /* background-color: pink; */
+    border: 10px dashed red;
+    /* border: 10px dotted red;
+    border: 10px double red;
+    border: 10px groove red;
+    border: 10px inset  red;
+    border: 10px ridge red;
+    border: 10px 10px outset red;
+    border: 10px none red; */
+    /* border: 10px hidden red; */
+}
+
+/* Border - style */
+.dotted {
+    border-style:dotted;
+}
+
+.dashed {
+    border-style: dashed;
+}
+
+.solid {
+    border-style: solid;
+}
+
+.double {
+    border-style: double;
+}
+
+.groove {
+    border-style: groove;
+}
+
+.ridge {
+    border-style: ridge;
+}
+
+.inset {
+    border-style: inset;
+}
+
+.outset {
+    border-style: outset;
+}
+
+.none {
+    border-style:none;
+}
+
+.hidden {
+    border-style: hidden;
+}
+
+.mix {
+    border-style: dotted dashed solid double;
+}
+
+/* Border - radius */
+.box-demo {
+    width: 70px;
+    height: 70px;
+    background-color: violet;
+    /* border-radius: 10px; */
+    /* border-radius: 10px 20px; */
+    /* border-radius: 10px 20px 30px; */
+    /* border-radius: 10px 15px  20px 25px; */
+    /* border-radius: 50%; */
+    
+}
+
+.box1{
+    width: 70px;
+    height: 70px;
+    background-color: yellow;
+    margin-left: 71px;
+    margin-top: 1px;
+}
+
+.box2 {
+    width: 70px;
+    height: 70px;
+    margin-left:140px;
+    background-color: blue;
+}

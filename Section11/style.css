@@ -1,0 +1,37 @@
+/* Lấy phân tử đầu tiên */
+p:first-of-type {
+    color: red;
+}
+
+/* Lấy phần tử cuối cùng */
+p:last-of-type {
+    color: green;
+}
+
+/* Lấy phần tử thứ 2  */
+p:nth-of-type(2) {
+    color: yellow;
+}
+
+/* Lấy phần tử thứ 2 từ dưới lên  */
+p:nth-last-of-type(2) {
+    color: brown;
+}
+
+/* Lấy phân phần tử duy nhất */
+h3:only-of-type {
+    color: blue;
+}
+
+/* lấy theo chẵn - lẻ, bước nhảy */
+h2:nth-of-type(odd) {
+    color:aqua;
+}
+
+h2:nth-of-type(even) {
+    color: orange;
+}
+
+/* h2:nth-of-type(2n+1){
+    color: violet;
+} */
