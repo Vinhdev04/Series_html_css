@@ -1,0 +1,76 @@
+/* th? g?c  html ho?c root => áp d?ng lên toàn trang*/
+:root {
+  --box-height: 150px;
+  /* --box1-color: violet; */
+  --box1-color: red;
+  --box2-color: pink;
+  --box3-color: aqua;
+}
+
+h1 {
+  text-align: center;
+  color: blue;
+  margin-bottom: 50px;
+}
+
+h1::selection {
+  color: red;
+}
+/*
+.box1 {
+  height: 100px;
+  background-color: #0f0;
+  margin-bottom: 10px;
+}
+
+.box2 {
+  height: 100px;
+  background-color: #0f0;
+  margin-bottom: 10px;
+}
+
+.box3 {
+  height: 100px;
+  background-color: #0f0;
+  margin-bottom: 10px;
+} */
+
+.box1 {
+  height: var(--box-height);
+  background-color: var(--box1-color);
+  margin-bottom: 10px;
+}
+
+.box2 {
+  height: var(--box-height);
+  background-color: var(--box2-color);
+  margin-bottom: 10px;
+}
+
+.box3 {
+  height: var(--box-height);
+  background-color: var(--box3-color);
+  margin-bottom: 10px;
+}
+
+/* có th? áp d?ng cho ph?n t? con c?a nó  */
+.paragraph-demo {
+  --p_font-size: 30px;
+  /* font-size: 30px; */
+  --p_color: green;
+}
+
+.paragraph-demo span {
+  font-size: var(--p-font-size);
+  color: var(--p_color);
+}
+
+.container {
+  --background-box: yellow;
+}
+
+.box4 {
+  height: var(--box-height);
+  background-color: var(--background-box, purple);
+  background-color: var(--background-box);
+}
