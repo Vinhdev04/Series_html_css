@@ -1,0 +1,23 @@
+h1 {
+  color: blue;
+  text-align: center;
+}
+
+h1::selection {
+  color: red;
+}
+
+* {
+  font-size: 1.5rem;
+}
+
+.container {
+  /* display: inline-flex; */
+  display: flex;
+  gap: 40px;
+  background-color: aqua;
+}
+
+.box {
+  background-color: brown;
+}

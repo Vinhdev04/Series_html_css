@@ -1,4 +1,5 @@
 {
-  "cSpell.language": "en,vi",
-  "cSpell.enableFiletypes": ["html"]
+  "cSpell.language": "en,vi,en-US,en-GB,lorem",
+  "cSpell.enableFiletypes": ["html"],
+  "cSpell.enabled": true
 }

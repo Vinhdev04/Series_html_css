@@ -1,0 +1,22 @@
+h1 {
+  color: blue;
+  text-align: center;
+}
+
+h1::selection {
+  color: red;
+}
+
+.pic {
+  width: 100px;
+  float: left;
+}
+
+.pic02 {
+  width: 100px;
+  float: right;
+}
+
+p:last-of-type {
+  clear: right;
+}

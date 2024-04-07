@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #85ffbd;
+  background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+}
+
+* {
+  font-size: 30px;
+}
+h1 {
+  color: brown;
+  text-align: center;
+}
+
+h1::selection {
+  color: red;
+}
+
+:root {
+  --padding-box: 30px;
+  --margin-box: 20px;
+}
+
+span {
+  color: blue;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+span::selection {
+  color: blueviolet;
+}
+
+.container1 {
+  display: flex;
+  gap: 40px;
+  text-align: center;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+
+  /* justify-content: center */
+  justify-content: center;
+  border: 1px dotted seagreen;
+  padding: var(--padding-box);
+  margin: var(--margin-box);
+}
+
+.box {
+  width: 100px;
+  background-color: rgb(55, 255, 0);
+}
+
+.container2 {
+  display: flex;
+  gap: 40px;
+  text-align: center;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+
+  /* justify-content: start  */
+  justify-content: start;
+
+  padding: var(--padding-box);
+  border: 1px dotted rgb(185, 41, 15);
+  margin: var(--margin-box);
+}
+
+.container3 {
+  display: flex;
+  gap: 40px;
+  text-align: center;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+
+  /*justify-content: end  */
+  justify-content: end;
+
+  padding: var(--padding-box);
+  border: 1px dotted rgb(185, 41, 15);
+  margin: var(--margin-box);
+}
+
+.container4 {
+  display: flex;
+  gap: 40px;
+  text-align: center;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+
+  /* justify-content: space-between */
+  justify-content: space-between;
+  padding: var(--padding-box);
+  border: 1px dotted rgb(185, 41, 15);
+  margin: var(--margin-box);
+}
+
+.container5 {
+  display: flex;
+  gap: 40px;
+  text-align: center;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+
+  /*  justify-content: space-around */
+  justify-content: space-around;
+  padding: var(--padding-box);
+  border: 1px dotted rgb(185, 41, 15);
+  margin: var(--margin-box);
+}
+
+.container6 {
+  display: flex;
+  gap: 40px;
+  text-align: center;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+
+  /*  justify-content: space-around */
+  justify-content: space-evenly;
+  padding: var(--padding-box);
+  border: 1px dotted rgb(185, 41, 15);
+  margin: var(--margin-box);
+}
