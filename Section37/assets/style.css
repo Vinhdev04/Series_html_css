@@ -48,9 +48,10 @@ span::selection {
   padding: var(--padding-box);
   margin: var(--margin-box);
 
+
   /* align-items: start */
   /* align-items: stretch; => default */
-  align-items: stat;
+  align-items: end;
 }
 
 .container2 {

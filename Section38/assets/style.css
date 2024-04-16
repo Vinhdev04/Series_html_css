@@ -1,0 +1,65 @@
+* {
+  font-size: 1.5rem;
+}
+
+h1 {
+  color: blue;
+  text-align: center;
+}
+
+h1::selection {
+  color: red;
+}
+
+.container {
+  height: 300px;
+  display: flex;
+  background-color: green;
+  /* justify-content: stretch; */
+
+  /* justify-content: flex-start */
+  justify-content: flex-start;
+
+  /* justify-content: flex-end */
+  justify-content: flex-end;
+
+  /* justify-content: center */
+  justify-content: center;
+
+  /* justify-content: baseline */
+  justify-content: baseline;
+
+  /* justify-content: space-around */
+  justify-content: space-around;
+
+  /* justify-content: space-between */
+  justify-content: space-between;
+
+  /* justify-content: space-evenly */
+  justify-content: space-evenly;
+
+  /* default: start */
+  align-items: stretch;
+
+  /* align-items: flex-end */
+  align-items: end;
+
+  /* align-items: flex-start */
+  align-items: flex-end;
+
+  /* align-items: baseline */
+  align-items: baseline;
+
+  /* align-items: center */
+  align-items: center;
+}
+
+.box1 {
+  height: 200px;
+  background-color: aquamarine;
+}
+
+.box {
+  background-color: blue;
+  font-size: 2rem;
+}

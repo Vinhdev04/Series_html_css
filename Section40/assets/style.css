@@ -1,0 +1,57 @@
+* {
+  font-size: 1.5rem;
+}
+
+h1 {
+  color: blue;
+  text-align: center;
+}
+
+h1::selection {
+  color: red;
+}
+
+.box {
+    border: 1px solid #ccc;
+  background-color: aqua;
+}
+
+.container1 {
+  display: flex;
+  background-color: aliceblue;
+
+  /* flex-direction: row -> thay doi truc main axis*/
+  flex-direction: row;
+
+  /* flex-direction: row-reverse */
+  flex-direction: row-reverse;
+
+  justify-content: flex-end;
+}
+
+.container2 {
+  margin-top: 100px;
+  display: flex;
+  background-color: aliceblue;
+
+  /* flex-direction: column
+     -> xoay truc cross-axis -> main axis
+     -> xoay truc main axis -> cross axis */
+  flex-direction: column;
+  /* justify-content: flex-end;
+  align-items: stretch;
+  align-items: flex-start;
+  align-items: flex-end; */
+
+  /* flex-direction: column-reverse */
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  justify-content: flex-start;
+  align-items: flex-end;
+  align-items: flex-start;
+
+
+  /* flex-flow ->  flex-flow: flex-wrap flex-direction */
+
+}
+

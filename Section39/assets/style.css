@@ -1,0 +1,63 @@
+* {
+  font-size: 1.5rem;
+}
+
+h1 {
+  color: blue;
+  text-align: center;
+}
+
+h1::selection {
+  color: red;
+}
+
+.box {
+  width: 30%;
+  background-color: blue;
+  border: 1px solid #fff;
+}
+
+.container {
+  min-height: 200px;
+  display: flex;
+  background-color: #ccc;
+
+  /* flex-wrap: nowrap -> default */
+  flex-wrap: nowrap;
+
+  /* flex-wrap: wrap-reverse */
+  flex-wrap: wrap-reverse;
+
+  /* flex-wrap: wrap */
+  flex-wrap: wrap;
+
+  /* flex-content: stretch -> default -> dung cho nhieu hang, theo truc cross axis */
+  align-content: stretch;
+
+  /* flex-content: flex-start */
+  align-content: flex-start;
+
+  /* flex-content: flex-end */
+  align-content: flex-end;
+
+  /* flex-content: baseline */
+  align-content: baseline;
+
+  /* flex-content: center */
+  align-content: center;
+
+  /* flex-content: space-around */
+  align-content: space-around;
+
+  /* flex-content: space-between */
+  align-content: space-between;
+
+  /* flex-content: space-evenly */
+  align-content: space-evenly;
+
+
+
+
+
+
+}
