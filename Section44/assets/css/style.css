@@ -1,0 +1,62 @@
+* {
+  font-size: 1.5rem;
+}
+
+h1 {
+  color: blue;
+  text-align: center;
+}
+
+h1::selection {
+  color: red;
+}
+
+.container {
+  display: flex;
+}
+
+.box {
+  /* Thu tu uu tien: content-width < width < flex-basis < min-width | max-width */
+  width: 100px;
+  flex-basis: 200px;
+  max-width: 100px;
+  /* Notes:
+      -> Neu max-width < flex-basis -> max-width
+      -> Neu max-width > flex-basis -> flex-basis
+   */
+
+   flex-grow: 0;
+   flex-shrink: 1;
+   flex-basis: 100px;
+
+   flex: 0 1 100px;
+}
+.box1 {
+  background-color: cyan;
+  order: 2;
+}
+
+.box2 {
+  background-color: blue;
+  order: 3;
+}
+
+.box3 {
+  background-color: blueviolet;
+  order: 1;
+}
+
+.box4 {
+  background-color: green;
+  order: 0;
+}
+
+/* flex: flex-grow | flex-shrink || flex-basis
+ -> flex-grow: 0 -> default
+ -> flex-shrink: 1 -> default
+ -> flex-shrink : 0 -> ko bi co lai
+ -> flex-basis -> set main size items theo truc main axis
+
+ Quy tac - Do uu tien kich thuoc items:
+    -> content width -> width -> flex-basis -> min-width | max-width
+*/

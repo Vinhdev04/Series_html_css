@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Helvetica Neue";
+  background-color: #f4f4f5;
+}
+
+body > div {
+  margin: auto;
+}
+
+/* ======= Buttons ======== */
+
+/* Block  -> x? lí các l?i button khi dùng th? a, button và div*/
+.btn {
+  display: inline-block;
+  min-width: 120px;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 12px 38px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  transition: opacity 0.2s ease;
+  -webkit-transition: opacity 0.2s ease;
+  -moz-transition: opacity 0.2s ease;
+  -ms-transition: opacity 0.2s ease;
+  -o-transition: opacity 0.2s ease;
+  cursor: pointer;
+}
+
+/* Css cho .btn phia sau .btn */
+.btn + .btn {
+  margin-left: 16px;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn--success {
+  background-color: #71be34;
+}
+
+.btn--warning {
+  background-color: #ffb702;
+}
+
+.btn--error {
+  background-color: #ff623d;
+}
+
+.btn--disabled {
+  opacity: 0.5 !important;
+  cursor: default;
+}
+
+.btn--size-l {
+  padding: 16px 56px;
+}
+
+.btn--size-s {
+   padding: 8px 32px;
+}

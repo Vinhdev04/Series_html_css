@@ -1,0 +1,64 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  background-color: orange;
+  --height: 100px;
+  height: var(--height);
+  text-align: center;
+  line-height: var(--height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Cách căn giữa 1 item trong một khối box */
+
+h3 {
+  /*cách1*/
+  text-align: center;
+
+  /*cách2*/
+  line-height: 100px;
+
+  /*cách3*/
+  margin: auto;
+
+  /*cách4*/
+  align-items: center;
+  justify-content: center;
+
+  /*cách5*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+h3:selection {
+    color:blue;
+}
+
+
+/* dùng position căn giữa trong trường hợp ko muốn tăng kích thước gốc cùng với ::before hoặc ::after */
+h3::after {
+  content: "";
+  position: absolute;
+  border-left: 3px solid #333;
+  height: 50px;
+  top: 50%;
+  left: -20px;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}

@@ -1,0 +1,59 @@
+* {
+  font-size: 1.5rem;
+}
+
+h1 {
+  color: blue;
+  text-align: center;
+}
+
+h1::selection {
+  color: red;
+}
+
+.container {
+  height: 150px;
+  display: flex;
+  align-items: flex-start;
+  background-color: aquamarine;
+  /* flex-wrap: wrap; */
+  overflow: auto;
+}
+
+.box {
+  border: 1px solid #000;
+  background-color: burlywood;
+  width: 30%;
+  flex-shrink: 0;
+}
+
+/* flex-shrink: 0 -> ko bi co lai
+   flex-shrink:  2 | .... -> bi co lai
+   flex-shrink: 1 -> default*/
+
+.box1 {
+  flex-shrink: 0;
+}
+
+.box2 {
+  flex-shrink: 1;
+}
+
+.main {
+  height: 150px;
+  background-color: blanchedalmond;
+  display: flex;
+  /* TH2: */
+  flex-direction: column;
+}
+
+.block {
+  /* trong TH1 :   flex-basis: 30% = width: 30%; -> the same*/
+  flex-basis: 30%;
+  width: 30%;
+  border: 1px solid #000;
+  background-color: cadetblue;
+  /* TH2 : flex-direction: colum ->  flex-basis: 30% != width: 30%; */
+  width: 30%;
+  flex-basis: 30%;
+}
