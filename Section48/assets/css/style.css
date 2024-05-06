@@ -4,10 +4,10 @@
   box-sizing: border-box;
 }
 
-.picture {
+/* .picture {
   width: 200px;
   height: 200px;
-}
+} */
 /* Fallback image */
 
 /* <!-- <img
@@ -20,3 +20,6 @@
 
     =>  onerror="this.sr -> chỉ dùng được cho thẻ img
     */
+
+
+/* ====================== Bài toán 1 ========================= */

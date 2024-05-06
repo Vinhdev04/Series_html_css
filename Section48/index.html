@@ -19,8 +19,8 @@
     <!-- <link rel="stylesheet" href="./assets/reset.css" /> -->
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Document</title>
-    <style>
+    <title>Tối ưu hình ảnh với srcset cho thẻ img</title>
+    <!-- <style>
       div {
         width: 200px;
         height: 200px;
@@ -28,6 +28,11 @@
           url(https://images.unsplash.com/photo-1713204767450-cf0411357b3a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
         background-repeat: no-repeat;
         background-size: 100%;
+      }
+    </style> -->
+    <style>
+      .image {
+        width: 100%;
       }
     </style>
   </head>
@@ -39,6 +44,42 @@
       class="picture"
       title="Fallback image"
     /> -->
-    <div></div>
+    <!-- <div></div> -->
+
+    <!-- Bài toán 1  -->
+    <!-- Resolution switching: Different sizes  -->
+    <!-- <img
+      srcset="
+        ./assets/img/avt-100x100.jpg 100v,
+        ./assets/img/avt-200x200.jpg 200v,
+        ./assets/img/avt-400x400.jpg 400v
+      "
+      sizes="
+        (max-width: 575px) 100px,
+        (max-width: 991px) 200px, 400px
+      "
+      src="./assets/img/avt-400x400.jpg"
+      alt="This is picture"
+    /> -->
+
+    <!-- Bài toán 2  -->
+    <!-- Resolution switching: Same size, different resolution-->
+    <!-- <img
+      srcset="./assets/img/avt-200x200.jpg 1x, ./assets/img/avt-400x400.jpg 2x"
+      src="./assets/img/avt-400x400.jpg"
+      alt="This is picture"
+    /> -->
+
+    <!-- Bài toán 2  -->
+    <!-- Resolution switching: Art Direction -->
+    <picture>
+      <source
+        media="(max-width: 575px)"
+        srcset="./assets/img/anh2.1.jpg" />
+      <img
+        src="./assets/img/anh2.jpg"
+        class="image"
+        alt="This is picture" />
+    </picture>
   </body>
 </html>
