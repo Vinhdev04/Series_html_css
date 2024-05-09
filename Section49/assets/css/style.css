@@ -1,0 +1,78 @@
+.box1,
+.box4,
+.box5 {
+  background-color: aqua;
+}
+
+.box2,
+.box3,
+.box6 {
+  background-color: blue;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+}
+
+/* ============================== Css Grid ============================== */
+.container {
+  /* display: inline-grid; */
+  display: grid;
+
+  /* mặc định */
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+
+  /* chia theo 1 cột */
+  grid-template-columns: 100px 100px;
+
+  /* chia theo 2 cột */
+  grid-template-columns: 100px 200px;
+  grid-template-columns: 100px calc(100% - 100px);
+
+  /* chia theo 1  dòng */
+  grid-template-rows: 50px 60px;
+
+  /* chia theo 2  dòng */
+  grid-template-rows: 50px 100px;
+
+  /* gap row*/
+  grid-row-gap: 10px;
+
+  /* gap column */
+  grid-column-gap: 2px;
+
+  /* shorthand: row-gap column-gap */
+  gap: 10px 2px;
+
+  /* shorthand: row-gap column-gap */
+  gap: 10px;
+
+  /* repeat -> sử dụng khi có nhiều giá trị trùng lặp */
+
+  grid-template-columns: 100px 100px 50px;
+  grid-template-columns: repeat(2, 100px) 50px;
+  grid-template-rows: 100px 100px 50px;
+  grid-template-columns: repeat(2, 100px) 50px;
+
+  /* Chia theo trọng số (chiếm bao nhiêu phần) */
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 2fr 4fr;
+
+  /* sử dụng giá trị auto để chia cột  -> ko dùng cho row*/
+  grid-template-columns: 100px auto;
+
+  /* Không hoạt động với row -> chỉ chứa vừa nội dung của nó */
+  grid-template-rows: 50px auto;
+
+  /* Min - Max */
+  grid-template-columns: minmax(150px, 300px) minmax(200px, auto);
+  grid-template-rows: minmax(50px, 80px) minmax(50px, 80px);
+  grid-template-rows: repeat(2, minmax(50px, 80px));
+
+  /* chỉ định chiều cao dòng mặc định */
+  grid-auto-rows: 50px;
+}
