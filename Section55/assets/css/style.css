@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.box {
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.container {
+  display: grid;
+  gap: 3px;
+  /* grid-template-columns: repeat(5, 1fr); */
+
+  /* auto-fill -> nếu còn chỗ trống sẻ tạo các grid ceil có kích thước bằng item hiện tại , nếu ko đủ chổ các item sẻ rớt xuống hàng mới */
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+  /* auto-fit -> kéo dãn các item chiếm đủ khóng trống cảu trình duyệt để lại , nếu ko còn chỗ tróng các item sẻ rớt xuống hàng mới */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
