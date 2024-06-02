@@ -1,0 +1,54 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+  margin: 0 auto;
+  background-color: cadetblue;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: burlywood;
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #ccc;
+}
+
+/*
+  - min() -> chọn phần tử nhỏ nhất (dương) để thực hiện => hay còn gọi là dùng hàm min() để giới hạn tối đa
+  - max() -> chọn phần tử lớn nhất (dương) để thực hiện => hay còn gọi là dùng hàm min() để giới hạn tối thiểu
+  - clamp( -> giới hạn 2 đầu (chặn trên và chặn dưới)
+*/
+@media (min-width: 318px) and (max-width: 480px) {
+  .container {
+    background-color: purple;
+    width: min(800px, 100%);
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1200px) {
+  .container {
+    width: max(100%, 500px);
+    background-color: chocolate;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1600px) {
+  .container {
+    background-color: green;
+    width: clamp(400px, 100%, 1170px);
+  }
+}
+
+@media (min-width: 1601px) {
+  .container {
+    background-color: yellow;
+  }
+  p {
+    font-size: clamp(20px, 2vw, 34px);
+  }
+}
