@@ -1,0 +1,215 @@
+body {
+  background-color: #85ffbd;
+  background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  display: inline-flex;
+  flex-direction: row;
+  margin: 100px 200px;
+  flex-wrap: wrap;
+  width: 50%;
+  background-color: #d9afd9;
+  background-image: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);
+}
+
+button {
+  display: flex;
+  margin: 30px;
+  outline: none;
+  border: none;
+}
+
+.btn {
+  padding: 20px 40px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-radius: 99px;
+  color: #fff;
+  background-color: orange;
+  transition: all linear 0.5s;
+  cursor: pointer;
+  box-shadow: 0 0 20px #eee;
+}
+
+.btn--first {
+  background-image: linear-gradient(
+    to right,
+    #314755 0%,
+    #26a0da 51%,
+    #314755 100%
+  );
+}
+/* Hover dịch chuyển vị trí */
+.btn--first:hover {
+  transform: translate(0, -20px);
+}
+
+/* Hover đổi màu background */
+.btn--second:hover {
+  background-image: linear-gradient(
+    to right,
+    #da22ff 0%,
+    #9733ee 51%,
+    #da22ff 100%
+  );
+}
+
+/* Hover chuyển màu nền từ trái qua phải */
+.btn--thrid {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn--thrid::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  background-color: chartreuse;
+  transition: all linear 0.5s;
+}
+
+.desc {
+  position: relative;
+  z-index: 1;
+}
+
+.btn--thrid:hover::after {
+  width: 100%;
+}
+
+/* Hover chuyển màu nền từ trái qua phải và chạy tiếp khi dừng hover */
+.btn--four {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn--four::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  /* left: 0; */
+  right: 0;
+  bottom: 0;
+  width: 0;
+  background-color: chartreuse;
+  transition: all linear 0.5s;
+}
+
+.btn--four:hover::after {
+  left: 0;
+  width: 100%;
+}
+
+/* Hover chuyển màu nền từ phải qua trái  chạy tiếp khi dừng hover  */
+.btn--five {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn--five::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  background-color: chartreuse;
+  transition: all linear 0.5s;
+}
+
+.btn--five:hover::after {
+  width: 100%;
+}
+
+/* Hover chuyển màu nền từ phải qua trái */
+.btn--six {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn--six::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  background-color: chartreuse;
+  transition: all linear 0.5s;
+}
+
+.btn--six:hover::after {
+  width: 100%;
+  right: 0;
+}
+
+/* Hover chuyển màu nền từ trên xuống dưới */
+.btn--sevent {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn--sevent::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  background-color: chartreuse;
+  transition: all linear 0.5s;
+}
+
+.btn--sevent:hover::after {
+  height: 100%;
+}
+
+/* Hover chuyển màu nền từ trên xuống dưới dừng hover tiếp tục chạy*/
+.btn--eight {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn--eight::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  background-color: chartreuse;
+  transition: all linear 0.5s;
+}
+
+.btn--eight:hover::after {
+  top: 0;
+  height: 100%;
+}
+
+/* Hover chuyển màu nền từ dưới lên trên */
+.btn--nine {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn--nine::after {
+  position: absolute;
+  content: "";
+  /* top: 0; */
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  background-color: chartreuse;
+  transition: all linear 0.5s;
+}
+
+.btn--nine:hover::after {
+  height: 100%;
+}
