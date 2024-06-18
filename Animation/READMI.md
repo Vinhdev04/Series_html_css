@@ -56,3 +56,75 @@
 // ---------------------------------- //
 
 ## Animation:
+
+1. Animation:
+   -> Tạo ra các chuyển động mà ko cần tác động vào phần tử
+
+2.CSS Keyframes:
+-> Cách tạo các bước cụ thể cảu animation, từ điểm xuất phát đến điểm kết thúc
+
+3. Transition:
+   -> Tạo ra các chuyển động khi tác động vào phần tử: hover,active,...
+
+## Animation:
+
+1. Cáu trúc:
+   ==> Shorthand:
+   -> animation: name duration timing-function delay iteration-count direction fill-mode
+
+- Name: tên của keyframes
+
+- Duration: thời gian áp dụng animation
+
+- Timing-function: kiểu animation: linear, ease-in, ease-out, ease-out-in,....
+
+  - ease -> mặc định có khởi đầu chậm, sau đó nhanh, rồi kết thúc chậm
+  - ease-in -> có khởi đầu chậm
+  - ease-out -> có kết thúc chậm
+  - ease-in-out -> bắt đầu và kết thúc chậm
+  - linear -> cùng tốc độ từ đầu đến cuối
+
+- Delay: Thời gian chờ trước khi chạy animation
+
+- Iteration-count: Số lần thực hiện
+
+- Direction: hướng chạy của animation:
+
+  - normal -> mặc định
+  - reverse -> chạy ngược lại
+  - alternate -> chạy bình thường sau đó chạy ngược lại
+  - alternate reverse -> chạy ngược lại sau đó chạy bình thường
+
+- Fill-mode: xác định vị trí cảu phần tử sau khi kết thúc animations
+  - none -> mặc định
+  - forward -> giá trị cuối cùng của keyframe animations
+  - backword -> ngay khi bắt đầu animation ở vị trí keyframe đầu tiên
+  - both -> bắt đầu tại keyframe đầu và kết thúc tại keyframe cuối
+
+### Thư viện AOS:
+
+-> Link: https://github.com/michalsnik/aos
+
+  <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+
+-> Thêm vào trước thẻ đóng body:
+
+ <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script> -->
+
+=> dùng js tác động vào transition là chính,
+
+### Thư viện Animate.css:
+
+-> Link: https://animate.style/
+
+ <!-- <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  /> -->
+
+=> animation nhưng ko linh hoạt
+
+### Kết hợp thư viện AOS và Animate.css :

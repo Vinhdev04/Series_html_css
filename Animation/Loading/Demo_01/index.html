@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="/Animation/Loading/icon16.webp"
+      type="image/x-icon"
+    />
+    <title>Practice Animation Loading P1</title>
+  </head>
+  <body>
+    <div class="container active">
+      <span class="overlay" id="percent">0%</span>
+    </div>
+    <!-- <script>
+      const container = document.querySelector(".container");
+
+      const percent = document.querySelector("#percent");
+
+      let perVal = 0;
+      let increament = setInterval(() => {
+        perVal++;
+        percent.textContent = `${perVal}%`;
+
+        // Kiểm tra nếu perVal đạt giá trị 100, thì dừng vòng lặp và xóa lớp "active" khỏi phần tử có lớp "container".
+        if (perVal == 100) {
+          // dừng vòng lặp
+          clearInterval(increament);
+          // Xóa lớp "active" khỏi phần tử có lớp "container"
+          container.classList.remove("active");
+        }
+        console.log(perVal);
+      }, 100);
+    </script> -->
+  </body>
+</html>
