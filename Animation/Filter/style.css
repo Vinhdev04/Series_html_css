@@ -1,0 +1,75 @@
+/* 
+  filter: none | 
+          blur() | 
+          brightness() | 
+          contrast() | 
+          drop-shadow() | 
+          grayscale() | 
+          hue-rotate() | 
+          invert() | 
+          opacity() | 
+          saturate() | 
+          sepia() | 
+          url();
+ */
+
+body {
+  background-color: #fff;
+}
+
+/* ------------------------- Filter cho Chat Img ------------- */
+.wrapper,
+.box,
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+/* box-shadow: x y blur spread color
+  -> đổ bóng xung quanh viền phần từ và phải có nền trong suốt
+*/
+img {
+  /* box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); */
+}
+
+/* drop shadow 
+  filter: drop-shadow(x y blur spread color) -> đổ bóng xung quanh phần tử với hình ảnh đưa vào là nền trong suốt
+*/
+/* img {
+  filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.904));
+} */
+
+/* ------------------------- Filter cho Chat Pop ------------- */
+.chat {
+  max-width: 300px;
+  font-size: 1.2rem;
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.904));
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 15px;
+  position: relative;
+}
+
+.chat::after {
+  content: "";
+  position: absolute;
+  border: 20px solid;
+  border-color: #fff transparent transparent;
+  right: 5%;
+  bottom: -40px;
+}
+
+/* ------------------------- Filter cho Icon ------------- */
+.icon {
+  filter: brightness(0) saturate(100%) invert(64%) sepia(85%) saturate(894%)
+    hue-rotate(190deg) brightness(109%) contrast(103%);
+}
+
+.logo {
+  max-width: 200px;
+  filter: hue-rotate(160deg);
+  margin: 100px;
+}
