@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/Animation/Loading/icon16.webp"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Html Form</title>
+  </head>
+  <body>
+    <h2>1. Tìm hiểu về <mark>form</mark>:</h2>
+    <form action="">
+      <label for="username">Username:</label>
+      <input
+        type="text"
+        id="username"
+        placeholder="Enter username"
+        name="username"
+        required
+      /><br /><br />
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="Enter password"
+        required
+      /><br /><br />
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Reset" />
+      <label>
+        Email:
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter Email"
+          required
+        />
+      </label>
+    </form>
+    <br />
+    <hr />
+    <h2>2. Tìm hiểu về <mark>checkbox</mark>:</h2>
+    <p>Bạn thích loại trái cây nào ?</p>
+    <form action="">
+      <input type="checkbox" name="banana" id="banana" />Chuối
+      <br />
+      <input type="checkbox" name="watermelon" id="watermelon" />Dưa hấu
+      <br />
+      <input type="checkbox" name="mango" id="mango" />Xoài
+      <br />
+      <input type="checkbox" name="fruit" id="fruit" />Thanh long
+      <br />
+      <input type="submit" value="Send" />
+    </form>
+    <br />
+    <hr />
+    <h2>3.Tìm hiểu về <mark>radio</mark>:</h2>
+    <p>Giới tính của bạn là ?</p>
+    <form action="">
+      <input type="radio" name="gender" id="gender__male" />Nam
+      <br />
+      <input type="radio" name="gender" id="gender__female" />Nữ
+      <br />
+      <input type="radio" name="gender" id="gender__other" />Giới tính thứ 3
+      <br />
+      <input type="submit" value="Send" />
+    </form>
+    <br />
+    <hr />
+    <h2>
+      4. Tìm hiểu về <mark>submit</mark> và <mark>button</mark> và
+      <mark>reset</mark>:
+    </h2>
+    <form action="">
+      <label>
+        Name:
+        <input
+          type="text"
+          name="name"
+          placeholder="Enter name"
+          required
+        /> </label
+      ><br /><br />
+      <input type="submit" value="Submit" /><br /><br />
+      <input type="button" value="Button" /><br /><br />
+      <input type="reset" value="Reset" />
+    </form>
+    <hr />
+    <h2>4. Sử dụng thẻ <mark>Button</mark>:</h2>
+    <button class="btn-icon">
+      <img src="/Animation/Loading/icon16.webp" alt="" />
+      Submit
+    </button>
+    <br />
+    <hr />
+    <h2>5. Tìm hiểu về <mark>range</mark> và <mark>number</mark>:</h2>
+    <form action="">
+      <input
+        type="range"
+        name="volume"
+        id="volume"
+        min="20"
+        max="200"
+        step="20"
+        value="40"
+      />
+      <br /><br />
+      <input
+        type="number"
+        name="number"
+        id="number"
+        min="0"
+        max="500"
+        step="1"
+        value="0"
+      />
+      <br /><br />
+      <button>Send now</button>
+    </form>
+    <br />
+    <hr />
+    <h2>6. Thuộc tính <mark>action</mark>:</h2>
+    <h3>Google search:</h3>
+    <form action="https://www.google.com/search">
+      <label>
+        <input type="text" name="q" placeholder="Enter your name" required />
+      </label>
+      <input type="submit" value="Search Google" />
+    </form>
+    <h3>Youtube search:</h3>
+    <form action="https://www.youtube.com/results">
+      <label>
+        <input
+          type="text"
+          name="search_query"
+          placeholder="Enter your name"
+          required
+        />
+      </label>
+      <input type="submit" value="Search Youtube" />
+    </form>
+    <br />
+    <hr />
+    <h2>7. Tìm hiểu về <mark>Select-option</mark> và <mark>Textarea</mark>:</h2>
+  </body>
+</html>
