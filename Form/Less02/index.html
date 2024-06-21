@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/Animation/Loading/icon16.webp"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>
+      Làm chủ thiết kế biểu mẫu Sử dụng placeholder-showed,focus-inside,
+      Tabindex và Tag Legend
+    </title>
+  </head>
+  <body>
+    <form action="" class="info__form">
+      <label for="">Username:</label>
+      <input
+        type="text"
+        name="username"
+        id="username"
+        placeholder="Nhập username"
+        tabindex="1"
+      /><br /><br />
+      <label for="">Password:</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="Nhập password"
+        tabindex="3"
+      /><br /><br />
+      <label for="">Email:</label>
+      <input type="email" name="email" id="email" tabindex="2" /><br /><br />
+      <button>Gửi</button>
+    </form>
+    <fieldset>
+      <legend>Đâu là thành phố có diện tích nhỏ nhất Việt Nam?</legend>
+      <form action="" class="form">
+        <input type="radio" name="questions" id="city" value="NA" />
+        <label for="">Nghệ An</label><br />
+        <input type="radio" name="questions" id="city" value="HCM" />
+        <label for="">Hồ Chí Minh</label><br />
+        <input type="radio" name="questions" id="city" value="BN" />
+        <label for="">Bắc Ninh</label><br />
+        <input type="radio" name="questions" id="city" value="BD" />
+        <label for="">Bình Dương</label><br />
+      </form>
+    </fieldset>
+  </body>
+</html>

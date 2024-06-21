@@ -148,5 +148,48 @@
     <br />
     <hr />
     <h2>7. Tìm hiểu về <mark>Select-option</mark> và <mark>Textarea</mark>:</h2>
+    <form action="">
+      <label for="message">Message: </label><br />
+      <textarea name="message" id="message" cols="20" rows="10"></textarea
+      ><br /><input type="button" value="Send me" />
+    </form>
+    <br />
+    <form action="">
+      <label for="colors">Chọn màu sắc yêu thích của bạn</label>
+      <select name="colors" id="colors">
+        <option value="">Chọn màu</option>
+        <option value="green">Xanh</option>
+        <option value="red">Đỏ</option>
+        <option value="purple">Tím</option>
+        <option value="yellow">Vàng</option>
+      </select>
+      <input type="button" value="Xác nhận lựa chọn" />
+    </form>
+    <h2>
+      8. Tìm hiểu về <mark>Select-option</mark> và <mark>Textarea</mark> kết hợp
+      gom nhóm:
+    </h2>
+    <form action="">
+      <label for="citys">Chọn tỉnh:</label>
+      <select name="citys" id="citys" required>
+        <option value="">Chọn một tỉnh</option>
+        <optgroup label="Miền Bắc">
+          <option value="HN">Hà Nội</option>
+          <option value="BN">Bắc Ninh</option>
+          <option value="HN">Hà Nam</option>
+        </optgroup>
+        <optgroup label="Miền Trung">
+          <option value="HT">Hà Tĩnh</option>
+          <option value="TH">Thanh Hóa</option>
+          <option value="NA">Nghệ An</option>
+        </optgroup>
+        <optgroup label="Miền Nam">
+          <option value="HCM">Hồ Chí Minh</option>
+          <option value="DN">Đồng Nai</option>
+          <option value="BD">Bình Dương</option>
+        </optgroup>
+      </select>
+      <button>Xác nhận tỉnh thành</button>
+    </form>
   </body>
 </html>

@@ -1,0 +1,46 @@
+/* Làm chủ thiết kế biểu mẫu Sử dụng placeholder-showed,focus-inside, Tabindex và Tag Legend */
+/* 
+----------------------------------------------------------------------------------------- */
+/* Khi placeholder của các thẻ input đang hiển thị placeholder */
+input:placeholder-shown {
+  background-color: aqua;
+}
+
+/* 
+----------------------------------------------------------------------------------------- */
+/* /* Khi placeholder của các thẻ input đang không hiển thị placeholder */
+input:not(:placeholder-shown) {
+  background-color: blueviolet;
+}
+
+/* 
+----------------------------------------------------------------------------------------- */
+/* Pseudo-class :focus-within */
+/* -> Được sử dụng để chọn phần tử cha chứa 1 phần tử con đang được focus */
+.info__form:focus-within {
+  color: red;
+}
+
+/* 
+----------------------------------------------------------------------------------------- */
+/* Đổi màu button klhi hover vào phần tử con */
+.info__form:focus-within button {
+  background-color: blue;
+  color: white;
+}
+/* 
+----------------------------------------------------------------------------------------- */
+/* Tabindex -> sử dụng để kiểm soát thứ tự được "tab" qua các phần tử trên một trang web khi người dùng sử dụng phím tab trên bàn phím */
+
+legend {
+  background: #000;
+  color: #fff;
+  padding: 3px 6px;
+  text-align: center;
+}
+input {
+  margin: 0.4rem;
+}
+.form:focus-within {
+  color: red;
+}
