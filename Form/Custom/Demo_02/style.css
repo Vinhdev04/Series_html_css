@@ -1,0 +1,87 @@
+main {
+  padding: 30px;
+}
+
+h1 {
+  font-size: 1.4rem;
+}
+
+form {
+  margin-top: 30px;
+}
+
+.form-group {
+  margin-top: 20px;
+  user-select: none;
+}
+
+.form-label,
+.form-input {
+  display: block;
+  margin-top: 10px;
+}
+
+.form-label {
+  font-weight: 600;
+}
+
+.form-input {
+  margin-top: 10px;
+  height: 34px;
+  width: 340px;
+  border: 2px solid #ccc;
+  padding: 4px 8px;
+  border-radius: 8px;
+}
+
+.form-group .btn {
+  margin-top: 20px;
+  padding: 10px 28px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  color: #fff;
+  background-color: hsl(240, 58%, 49%);
+  cursor: pointer;
+}
+
+.form-group .btn:hover {
+  opacity: 0.8;
+}
+
+/* dùng before vẽ radio */
+.gender-group label::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #383636;
+  border-radius: 50%;
+  margin-right: 4px;
+}
+
+/* dùng after tạo custom checkbox radio */
+.gender-group label::after {
+  content: "";
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  background-color: rgb(14, 217, 14);
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  left: 2px;
+  /* mặc đỉnh ẩn */
+  display: none;
+}
+
+.gender-group label {
+  position: relative;
+  user-select: none;
+}
+
+/* Kiểm tra các input có type:radio đã được checked -> chọn các thẻ label:after tác động */
+#male:checked + label::after,
+#female:checked + label::after,
+#other:checked + label::after {
+  display: inline-block;
+}

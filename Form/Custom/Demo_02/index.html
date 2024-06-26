@@ -11,5 +11,65 @@
     <link rel="stylesheet" href="style.css" />
     <title>Custom checkbox radio</title>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <h1>Register</h1>
+      <form action="">
+        <div class="form-group">
+          <label for="name" class="form-label">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-input"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="form-label">Gender</label>
+          <div class="gender-group">
+            <input type="radio" name="gender" id="male" value="male" hidden />
+            <label for="male">Male</label>
+
+            <input
+              type="radio"
+              name="gender"
+              id="female"
+              value="female"
+              hidden
+            />
+            <label for="female">Female</label>
+
+            <input type="radio" name="gender" id="other" value="other" hidden />
+            <label for="other">Other</label>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="mail">Email</label>
+            <input
+              class="form-input"
+              type="email"
+              name="mail"
+              id="mail"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="password">Password</label>
+            <input
+              class="form-input"
+              type="password"
+              name="password"
+              id="password"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <button class="btn" type="submit" class="btn">Submit</button>
+            <button class="btn" type="reset" class="btn">Reset</button>
+          </div>
+        </div>
+      </form>
+    </main>
+  </body>
 </html>
